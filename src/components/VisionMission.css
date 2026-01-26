@@ -1,0 +1,74 @@
+/* ============================= */
+/* VISION & MISSION PAGE STYLES */
+/* ============================= */
+
+.vision-mission-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+.vision-mission-wrapper h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #003366;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.vision-mission-wrapper h2::after {
+  content: "";
+  width: 90px;
+  height: 4px;
+  background: #f39c12;
+  display: block;
+  margin: 14px auto 0;
+  border-radius: 2px;
+}
+
+.vision-mission-wrapper p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.vision-mission-wrapper strong {
+  color: #003366;
+  font-weight: 600;
+}
+
+/* ========================= */
+/* RESPONSIVE DESIGN */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .vision-mission-wrapper {
+    padding: 4rem 1.5rem;
+  }
+
+  .vision-mission-wrapper h2 {
+    font-size: 2rem;
+  }
+
+  .vision-mission-wrapper p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .vision-mission-wrapper {
+    padding: 3rem 1.2rem;
+  }
+
+  .vision-mission-wrapper h2 {
+    font-size: 1.6rem;
+  }
+
+  .vision-mission-wrapper p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+}

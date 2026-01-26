@@ -48,7 +48,7 @@ const Navbar = () => {
 
       <ul className={`navbar-links ${isMenuOpen ? 'active' : ''}`} ref={menuRef}>
         <li><Link to="/" onClick={closeMenus}>Home</Link></li>
-        <li><Link to="/about" onClick={closeMenus}>About</Link></li>
+        <li><Link to="/about" onClick={closeMenus}>About Us</Link></li>
 
         <li className="services-dropdown" ref={servicesRef}>
           <span className="dropdown-toggle" onClick={toggleServices}>Industries</span>

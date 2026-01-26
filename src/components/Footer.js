@@ -9,9 +9,9 @@ const Footer = () => {
       <div className="footer-grid">
         {/* About PRAVSTA */}
         <div className="footer-col">
-          <h4>About PRAVSTA</h4>
+          <h4>Our Core Technology</h4>
           <ul>
-            <li><Link to="/about#vision-mission">Vision & Mission</Link></li>
+            <li><Link to="/VisionMission">Vision & Mission</Link></li>
             <li><Link to="/about#leadership">Leadership</Link></li>
             <li><Link to="/about#our-story">Our Story</Link></li>
             <li><Link to="/about#careers">Careers</Link></li>
