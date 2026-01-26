@@ -1,0 +1,168 @@
+/* === Navbar Wrapper === */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  padding: 0 1.5rem; /* balanced left-right padding */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: 'Poppins', sans-serif;
+  height: 70px;
+  width: 100%; /* full width */
+  box-sizing: border-box;
+}
+
+/* === Logo Section === */
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  flex-shrink: 0;
+}
+
+.logo-image {
+  height: 42px;
+  margin-right: 0.6rem;
+}
+
+.company-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  white-space: nowrap;
+  line-height: 1.2;
+}
+
+/* === Links === */
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li a,
+.dropdown-toggle {
+  text-decoration: none;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.navbar-links li a:hover,
+.dropdown-toggle:hover {
+  color: #ffb400;
+}
+
+/* === Dropdown Menu === */
+.services-dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background: #111;
+  border-radius: 6px;
+  min-width: 180px;
+  padding: 0.5rem 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  display: none;
+}
+
+.services-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.dropdown-menu li a:hover {
+  background: #222;
+  color: #ffb400;
+}
+
+/* === Hamburger Icon === */
+.menu-button-wrapper {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon {
+  font-size: 1.8rem;
+  color: white;
+}
+
+/* === Responsive === */
+@media (max-width: 1024px) {
+  .company-name {
+    font-size: 0.9rem;
+  }
+
+  .navbar-links {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-button-wrapper {
+    display: block;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 230px;
+    padding: 1rem;
+    border-radius: 0 0 0 8px;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-links li {
+    margin: 0.6rem 0;
+  }
+
+  .company-name {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-image {
+    height: 34px;
+  }
+
+  .company-name {
+    font-size: 0.72rem;
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .navbar-links {
+    width: 200px;
+  }
+}

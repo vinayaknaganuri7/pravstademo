@@ -1,0 +1,5 @@
+0000000000000000000000000000000000000000 fcc2960cccd9014c92ac517c9b836501e3410d6a vinayaknaganuri7 <vinayaknaganuri7@gmail.com> 1765021880 +0530	commit (initial): Initial commit or update
+fcc2960cccd9014c92ac517c9b836501e3410d6a f1ce483113efb7b7b6ec58fa3061abbdffec9af3 vinayaknaganuri7 <vinayaknaganuri7@gmail.com> 1765030479 +0530	pull --rebase origin master (start): checkout f1ce483113efb7b7b6ec58fa3061abbdffec9af3
+f1ce483113efb7b7b6ec58fa3061abbdffec9af3 4c88441e21cd66a86f915238d0c8c7d5859e9caf vinayaknaganuri7 <vinayaknaganuri7@gmail.com> 1765032815 +0530	commit: Initial clean commit
+4c88441e21cd66a86f915238d0c8c7d5859e9caf 2b411f9de3b833bd0d818aa299684121bed1ce1b vinayaknaganuri7 <vinayaknaganuri7@gmail.com> 1765043955 +0530	commit: Initial clean commit
+2b411f9de3b833bd0d818aa299684121bed1ce1b 2b411f9de3b833bd0d818aa299684121bed1ce1b vinayaknaganuri7 <vinayaknaganuri7@gmail.com> 1765044166 +0530	rebase (finish): returning to refs/heads/master

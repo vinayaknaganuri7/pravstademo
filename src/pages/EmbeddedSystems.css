@@ -1,0 +1,110 @@
+/* HERO SECTION */
+.embedded-hero {
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+.embedded-hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.embedded-hero p {
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* SPLIT SECTIONS */
+.embedded-section {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding: 80px 10%;
+}
+
+.embedded-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.section-image img {
+  width: 75%;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.section-text {
+  width: 55%;
+}
+
+.section-text h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.section-text ul {
+  list-style: disc;
+  padding-left: 20px;
+  color: #444;
+  line-height: 1.7;
+}
+
+.section-text ul li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* TECH APPROACH & VALUE */
+.embedded-approach,
+.embedded-value {
+  padding: 80px 10%;
+  background: #f9f9f9;
+}
+
+.embedded-approach h2,
+.embedded-value h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.embedded-approach ul,
+.embedded-value ul {
+  list-style: disc;
+  padding-left: 20px;
+  line-height: 1.7;
+  font-size: 18px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .embedded-section,
+  .embedded-section.reverse {
+    flex-direction: column;
+  }
+
+  .section-image,
+  .section-text {
+    width: 100%;
+  }
+
+  .section-image img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .embedded-hero h1 {
+    font-size: 36px;
+  }
+
+  .embedded-hero p {
+    font-size: 18px;
+  }
+
+  .embedded-approach h2,
+  .embedded-value h2 {
+    font-size: 28px;
+  }
+}

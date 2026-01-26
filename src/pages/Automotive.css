@@ -1,0 +1,51 @@
+.auto-hero {
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+.auto-split {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding: 80px 10%;
+}
+
+.auto-split.reverse {
+  flex-direction: row-reverse;
+}
+
+.auto-split img {
+  width: 45%;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.auto-content {
+  width: 55%;
+}
+
+.auto-content h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.auto-content p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .auto-split,
+  .auto-split.reverse {
+    flex-direction: column;
+  }
+
+  .auto-split img,
+  .auto-content {
+    width: 100%;
+  }
+}

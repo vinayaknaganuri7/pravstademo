@@ -1,0 +1,107 @@
+/* PAGE BACKGROUND */
+.contact-3d-page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #081b26, #0b2a3a);
+  color: #ffffff;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* WRAPPER */
+.contact-3d-wrapper {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 20px;
+}
+
+/* DATE */
+.top-date {
+  color: #c7dbe4;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+/* GRID */
+.top-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+/* NEON CARD */
+.neo-card {
+  position: relative;
+  padding: 36px 40px;
+  border-radius: 24px;
+
+  background:
+    linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02)),
+    radial-gradient(circle at top right, rgba(0,255,255,0.18), transparent 60%),
+    #0d2532;
+
+  box-shadow:
+    0 0 0 2px rgba(0, 255, 255, 0.55),
+    0 0 28px rgba(0, 255, 255, 0.45),
+    inset 0 0 30px rgba(0, 255, 255, 0.15);
+
+  backdrop-filter: blur(16px);
+  transform-style: preserve-3d;
+  transition: all 0.45s ease;
+  overflow: hidden;
+}
+
+/* CIRCUIT PATTERN */
+.neo-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle, rgba(0,255,255,0.35) 1px, transparent 1px);
+  background-size: 26px 26px;
+  opacity: 0.08;
+}
+
+/* 3D HOVER */
+.neo-card:hover {
+  transform: translateY(-12px) rotateX(6deg);
+  box-shadow:
+    0 0 0 2px rgba(0, 255, 255, 0.9),
+    0 0 50px rgba(0, 255, 255, 0.8);
+}
+
+/* TEXT */
+.neo-card h3 {
+  margin: 0 0 14px;
+  font-size: 22px;
+  letter-spacing: 0.6px;
+}
+
+.neo-card p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #e6f7ff;
+}
+
+/* EMAIL */
+.neo-card .accent a {
+  color: #5deaff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.neo-card .accent a:hover {
+  text-decoration: underline;
+}
+
+/* LARGE CARD */
+.neo-card.large {
+  padding: 46px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .top-cards {
+    grid-template-columns: 1fr;
+  }
+}
