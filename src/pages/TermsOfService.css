@@ -1,0 +1,60 @@
+/* Simple Terms of Service Design */
+
+.tos-page {
+  min-height: 100vh;
+  background: #ffffff; /* clean white background */
+  display: flex;
+  justify-content: center;
+  padding: 80px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tos-container {
+  max-width: 800px;
+  width: 100%;
+  background: #fefefe;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  color: #1f2937;
+  text-align: justify; /* justified text */
+}
+
+.tos-container h1 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1e3a8a;
+}
+
+.tos-section {
+  margin-bottom: 25px;
+}
+
+.tos-section h2 {
+  font-size: 20px;
+  color: #2563eb;
+  margin-bottom: 8px;
+}
+
+.tos-section p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #374151;
+}
+
+.tos-contact {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.tos-contact a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.tos-contact a:hover {
+  text-decoration: underline;
+}

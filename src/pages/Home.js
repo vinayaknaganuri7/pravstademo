@@ -10,6 +10,7 @@ import "./Home.css";
 import embeddedImage from "../components/pages/images/embedded.jpeg";
 import iotImage from "../components/pages/images/iot.jpg";
 import dataToolsImage from "../components/pages/images/datasci.jpeg";
+import cctvImage from "../components/pages/images/cctv.png"; // <-- make sure you have a proper CCTV image
 
 // Icons
 import { FaCarSide, FaServer, FaCogs } from "react-icons/fa";
@@ -154,6 +155,48 @@ const Home = () => {
           </motion.div>
         ))}
       </section>
+
+      {/* ===============================
+          CCTV / Camera Health Monitoring
+      =============================== */}
+      <motion.section
+        className="cctv-section"
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+      >
+        <motion.div className="cctv-container" variants={fadeUp}>
+          <div className="cctv-text">
+            <h2 className="gradient-text">PRAVSTA Camera Health Monitoring 🚨</h2>
+            <p><strong>Always Know. Always Secure.</strong></p>
+            <p>
+              In today’s security-first environment, uninterrupted surveillance isn’t optional—it’s essential.
+              PRAVSTA Camera Health Monitoring delivers intelligent, real-time visibility into your CCTV infrastructure,
+              helping you stay ahead of failures and maintain peak system performance.
+            </p>
+            <p><strong>Why PRAVSTA?</strong></p>
+            <p>
+              Our advanced monitoring solution empowers security teams with proactive insights and automated intelligence,
+              ensuring every camera operates when it matters most.
+            </p>
+            <p><strong>Key Features</strong></p>
+            <ul>
+              <li><strong>Real-Time System Monitoring:</strong> Continuously track the health and status of all surveillance cameras.</li>
+              <li><strong>Intelligent Video Analytics:</strong> Transform raw data into actionable insights for smarter decision-making.</li>
+              <li><strong>Proactive Maintenance Alerts:</strong> Detect issues early and prevent downtime before it impacts security.</li>
+            </ul>
+            <p><strong>Built for Scalable Security</strong></p>
+            <p>
+              Whether you oversee a large enterprise facility, critical infrastructure, or multi-site security operations, 
+              PRAVSTA provides complete visibility and centralized control—so no camera goes unnoticed and no moment is missed.
+            </p>
+            <p>🔍 Empower your team with data-driven surveillance intelligence. Stay operational. Stay protected. Stay ahead with PRAVSTA.</p>
+          </div>
+          <div className="cctv-image">
+            <img src={cctvImage} alt="PRAVSTA CCTV Monitoring" />
+          </div>
+        </motion.div>
+      </motion.section>
 
       {/* Footer */}
       <Footer />

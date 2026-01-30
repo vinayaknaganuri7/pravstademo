@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="footer-col">
           <h4>Our Core Technology</h4>
           <ul>
-            <li><Link to="/VisionMission">Vision & Mission</Link></li>
+             <li><Link to="/vision-mission">Vision & Mission</Link></li>
             <li><Link to="/about#leadership">Leadership</Link></li>
             <li><Link to="/about#our-story">Our Story</Link></li>
             <li><Link to="/about#careers">Careers</Link></li>
@@ -34,8 +34,8 @@ const Footer = () => {
           <h4>Quick Links</h4>
           <ul>
             <li><Link to="/Contact">Contact Us</Link></li>
-            <li><Link to="/Contact">Terms of Service</Link></li>
-            <li><Link to="/Contact">Privacy Policy</Link></li>
+            <li><Link to="/terms">Terms of Service</Link></li>
+            <li><Link to="/PrivacyPolicy">Privacy Policy</Link></li>
             <li><Link to="/Contact">Support</Link></li>
           </ul>
         </div>
